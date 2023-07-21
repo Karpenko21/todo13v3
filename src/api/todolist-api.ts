@@ -37,11 +37,11 @@ type TaskType = {
 
 type UpdateTaskModelType = {
     title: string
- /*   description: string
+    description: string
     status: number
     priority: number
     startDate: string
-    deadline: string*/
+    deadline: string
 }
 
 export const todoListApi = {
