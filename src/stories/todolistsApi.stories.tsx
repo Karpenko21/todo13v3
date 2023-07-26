@@ -237,7 +237,7 @@ export const UpdateTaskTitle = () => {
             <input placeholder={"status"} type="number" onChange={(e) => {setStatus(+e.currentTarget.value)}} value={status}/>
             <input placeholder={"priority"}  onChange={(e) => {setPriority(+e.currentTarget.value)}} value={priority}/>
 
-            <button onClick={changeTaskTitle}>Change Task Title</button>
+            <button onClick={changeTaskTitle}>Change Task</button>
         </div>
     </div>
 }

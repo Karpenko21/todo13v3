@@ -22,11 +22,11 @@ type GetTasksResponseType = {
     error: string | null
     items: TaskType[]
 }
-type TaskType = {
+export type TaskType = {
     description: string
     title: string
-    status: number
-    priority: number
+    status: TaskStatuses
+    priority: TaskPriorities
     startDate: string
     deadline: string
     id: string
@@ -34,6 +34,23 @@ type TaskType = {
     order: number
     addedDate: string
 }
+
+export enum TaskStatuses {
+    New,
+    InProgress,
+    Completed,
+    Draft
+}
+
+export enum TaskPriorities {
+    New,
+    InProgress,
+    Completed,
+    Draft,
+    Later
+}
+
+
 
 type UpdateTaskModelType = {
     title: string
